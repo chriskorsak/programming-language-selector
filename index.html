@@ -16,6 +16,7 @@
     <h2>Questionaire:</h2>
     <form id="questionaire">
 
+      <!-- radio -->
       <p>What's your favorite blank in the morning?</p>
       <div class="radio">
         <label>
@@ -116,14 +117,35 @@
         </label>
       </div>
 
-
       <!-- true/false -->
-      <p></p>
-      <p></p>
+      <div class="form-group">
+        <p>Q6?</p>
+        <select name="question6" id="question6">
+          <option value="True">True</option>
+          <option value="False">False</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <p>Q7?</p>
+        <select name="question7" id="question7">
+          <option value="True">True</option>
+          <option value="False">False</option>
+        </select>
+      </div>
+
       <!-- free form input=text question -->
-      <p></p>
+      <div class="form-group">
+        <label for="question8">What year did you buy your first computer?</label>
+        <input type="text" name="question8" id="question8" placeholder="answer">
+      </div>
+
       <!-- input=text name box -->
-      <p></p>
+      <div class="form-group">
+      <label for="question9">What's your first name?</label>
+      <input type="text" name="question9" id="question9" placeholder="name">
+      </div>
+
       <button type="submit">Submit Answers</button>
     </form>
 

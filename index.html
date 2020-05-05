@@ -12,7 +12,7 @@
 <body>
   <div class="container">
     <h1>Programming Language Selector</h1>
-    <p>There are countless programming languages out there. So which one do you learn first? Rather than debate details that probably won't make sense when you are starting out, take a simple questionaire instead! After answering these simple questions, a programming language will be displayed along with further information and links so you can get started right away.</p>
+    <p>There are countless programming languages out there. So which one do you learn first? Rather than debate subtle details that probably won't make sense when you are starting out, take a simple questionaire instead! After providing your answers, a programming language will be displayed along with further information and links so you can get started learning your first language.</p>
     <p>Remember, you will most likely learn many programming languages over the course of your development career, so don't worry about picking the <em>wrong</em> language. There's no such thing!</p>
     <h2>Questionaire:</h2>
     <form id="questionaire">
@@ -48,13 +48,13 @@
       <div class="radio">
         <label>
         <input type="radio" name="question2" value="2">
-        game developer
+        Game developer
         </label>
       </div>
       <div class="radio">
         <label>
         <input type="radio" name="question2" value="3">
-        web developer
+        Web developer
         </label>
       </div>
 
@@ -94,7 +94,7 @@
       <div class="radio">
         <label>
         <input type="radio" name="question4" value="3">
-        Freelance
+        Freelancer
         </label>
       </div>
 
@@ -120,7 +120,7 @@
 
       <!-- true/false -->
       <div class="form-group">
-        <p>My favorite Sean Penn movie is The Interpreter</p>
+        <p>My favorite Sean Penn movie is The Interpreter.</p>
         <select name="question6" id="question6">
           <option value="True">True</option>
           <option value="False">False</option>
@@ -128,7 +128,7 @@
       </div>
 
       <div class="form-group">
-        <p>I think Bill Gates is a role model</p>
+        <p>I think Bill Gates is a role model.</p>
         <select name="question7" id="question7">
           <option value="True">True</option>
           <option value="False">False</option>
@@ -152,7 +152,7 @@
 
     <!-- questionaire output -->
     <div id="output">
-
+      <p>Thanks for filling out this questionaire, <span id="name"></span>. Based on your answers, the first programming language you should learn is <span id="language"></span>. Check out the following link to learn more about <span id="link"></span>.</p>
     </div>
   </div> 
 </body>

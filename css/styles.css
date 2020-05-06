@@ -1,3 +1,32 @@
+body {
+  background-color: #00b3be;
+}
+
+.container {
+  background-color: #ffffff;
+  padding-bottom: 2%;
+}
+
 #output {
   display: none;
+  padding: 2%;
+  margin: 2%;
+  background-color: #dfdfdf;
+  font-size: 115%;
+}
+
+.container img {
+  float: right;
+}
+
+.container {
+  padding: 1%;
+}
+
+/* label {
+  font-weight: normal;
+} */
+
+form p {
+  font-weight: bold !important;
 }

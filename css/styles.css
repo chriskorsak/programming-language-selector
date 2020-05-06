@@ -12,6 +12,7 @@ body {
   padding: 2%;
   margin: 2%;
   background-color: #dfdfdf;
+  border: 1px solid #00b3be;
   font-size: 115%;
 }
 
@@ -23,10 +24,6 @@ body {
   padding: 1%;
 }
 
-/* label {
+label {
   font-weight: normal;
-} */
-
-form p {
-  font-weight: bold !important;
 }

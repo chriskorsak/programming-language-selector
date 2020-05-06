@@ -11,148 +11,162 @@
 </head>
 <body>
   <div class="container">
-    <h1>Programming Language Selector</h1>
-    <p>There are countless programming languages out there. So which one do you learn first? Rather than debate subtle details that probably won't make sense when you are starting out, take a simple questionaire instead! After providing your answers, a programming language will be displayed along with further information and links so you can get started learning your first language.</p>
-    <p>Remember, you will most likely learn many programming languages over the course of your development career, so don't worry about picking the <em>wrong</em> language. There's no such thing!</p>
+
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Programming Language Selector</h1>
+        <p>There are countless programming languages out there. So which one do you learn first? Rather than researching for hours about details that probably won't make sense when you are starting out, try this simple questionaire instead! After providing your answers, a programming language suggestion will be displayed along with a link so you can get started learning about your first language.</p>
+        <p>Remember, you will most likely learn many programming languages over the course of your development career, so don't worry about picking the <em>wrong</em> language. There's no such thing!</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="computer screen with code displayed" class="img-responsive">
+      </div>
+    </div>
+
     <h2>Questionaire:</h2>
-    <form id="questionaire">
+    <div class="row">
+      <div class="col-md-4">
+        <form id="questionaire">
+          <!-- start bootstrap column1 -->
+          <p>What's your favorite tech company?</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question1" value="1">
+            Apple
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question1" value="2">
+            Microsoft
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question1" value="3">
+            Google
+            </label>
+          </div>
 
-      <!-- radio -->
-      <p>What's your favorite tech company?</p>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question1" value="1">
-        Apple
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question1" value="2">
-        Microsoft
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question1" value="3">
-        Google
-        </label>
-      </div>
+          <p>What career sounds interesting to you?</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question2" value="1">
+            iOS app developer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question2" value="2">
+            Game developer
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question2" value="3">
+            Web developer
+            </label>
+          </div>
 
-      <p>What career sounds interesting to you?</p>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question2" value="1">
-        iOS app developer
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question2" value="2">
-        Game developer
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question2" value="3">
-        Web developer
-        </label>
-      </div>
+          <p>What's your go-to web browser?</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question3" value="1">
+            Safari
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question3" value="2">
+            Chrome
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question3" value="3">
+            Firefox
+            </label>
+          </div>
 
-      <p>What's your go-to web browser?</p>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question3" value="1">
-        Safari
-        </label>
       </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question3" value="2">
-        Chrome
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question3" value="3">
-        Firefox
-        </label>
-      </div>
+      <!-- end bootstrap column 1, start column 2 -->
+      <div class="col-md-4">
+          <p>Would you rather work at a startup, a well-established company, or freelance?</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question4" value="1">
+            Startup
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question4" value="2">
+            Well-established company
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question4" value="3">
+            Freelance
+            </label>
+          </div>
+          <p>What are you most afraid of?</p>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question5" value="1">
+            Snakes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question5" value="2">
+            Tunnels
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+            <input type="radio" name="question5" value="3">
+            Darkness
+            </label>
+          </div>
+      </div> 
+      <!-- end bootstrap column 2, start column 3 -->
+      <div class="col-md-4">
+          <div class="form-group">
+            <p>Sean Penn is my favorite actor.</p>
+            <select name="question6" id="question6">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+          </div>
 
-      <p>Would you rather work at a startup, a well-established company, or be a freelancer?</p>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question4" value="1">
-        Startup
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question4" value="2">
-        Well-established company
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question4" value="3">
-        Freelancer
-        </label>
-      </div>
+          <div class="form-group">
+            <p>I think Bill Gates is a great role model.</p>
+            <select name="question7" id="question7">
+              <option value="true">True</option>
+              <option value="false">False</option>
+            </select>
+          </div>
 
-      <p>What are you most afraid of?</p>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question5" value="1">
-        Snakes
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question5" value="2">
-        Tunnels
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-        <input type="radio" name="question5" value="3">
-        Darkness
-        </label>
-      </div>
+          <div class="form-group">
+            <label for="question8">What year did you buy your first computer?</label>
+            <input type="text" name="question8" id="question8" placeholder="year" required>
+          </div>
 
-      <!-- true/false -->
-      <div class="form-group">
-        <p>Sean Penn is my favorite actor.</p>
-        <select name="question6" id="question6">
-          <option value="true">True</option>
-          <option value="false">False</option>
-        </select>
+          <div class="form-group">
+            <label for="question9">What's your first name or nickname?</label>
+            <input type="text" name="question9" id="question9" placeholder="name" required>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Submit Answers</button>
+        </form>
       </div>
-
-      <div class="form-group">
-        <p>I think Bill Gates is a role model.</p>
-        <select name="question7" id="question7">
-          <option value="true">True</option>
-          <option value="false">False</option>
-        </select>
-      </div>
-
-      <!-- free form input=text question -->
-      <div class="form-group">
-        <label for="question8">What year did you buy your first computer?</label>
-        <input type="text" name="question8" id="question8" placeholder="answer" required>
-      </div>
-
-      <!-- input=text name box -->
-      <div class="form-group">
-      <label for="question9">What's your first name?</label>
-      <input type="text" name="question9" id="question9" placeholder="name" required>
-      </div>
-
-      <button type="submit">Submit Answers</button>
-    </form>
+      <!-- end bootstrap column 3 -->
+    </div>
 
     <!-- questionaire output -->
     <div id="output">
-      <p>Thanks for filling out this questionaire, <span id="name"></span>. Based on your answers, the first programming language you should learn is <span id="language"></span>. Check out the following link to learn more about <span id="link"></span>.</p>
+      <p>Thanks for filling out this questionaire, <span id="name"></span>! Based on your answers, the first programming language you should learn is <span id="language"></span>. Check out the following link to learn more about <span id="link"></span>.</p>
     </div>
   </div> 
 </body>
